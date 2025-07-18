@@ -1,0 +1,39 @@
+/* base.css */
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  padding: 0.75rem 1.25rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.alert {
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.container {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}

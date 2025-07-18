@@ -1,0 +1,56 @@
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+/* Carousel */
+.carousel-img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Welcome Section */
+.container h1 {
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.lead {
+    color: #555;
+}
+
+/* Offcanvas */
+.offcanvas-title {
+    font-weight: 600;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-img {
+        max-height: 300px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}

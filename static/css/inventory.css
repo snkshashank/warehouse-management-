@@ -1,0 +1,42 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 70px;
+}
+
+/* Heading */
+h2 {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+/* Search Input */
+form input[type="text"] {
+    max-width: 400px;
+}
+
+/* Table */
+.table thead th {
+    background-color: #f1f1f1;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+/* Responsive Button Group */
+@media (max-width: 576px) {
+    .form-control,
+    .btn {
+        width: 100% !important;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+    }
+}

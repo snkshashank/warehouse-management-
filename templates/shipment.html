@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Shipments{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/shipment.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="shipment-container">
+    <h2 class="text-center mb-4">📦 Shipment Records</h2>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover shadow-sm">
+            <thead class="table-light">
+                <tr>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for shipment in shipments %}
+                <tr>
+                    <td>{{ shipment.id }}</td>
+                    <td>{{ shipment.product.name if shipment.product else 'N/A' }}</td>
+                    <td>{{ shipment.quantity }}</td>
+                    <td><span class="badge bg-secondary">{{ shipment.status }}</span></td>
+                    <td>
+                        <a href="/shipment/edit/{{ shipment.id }}" class="btn btn-warning btn-sm">Update</a>
+                        <a href="/shipment/delete/{{ shipment.id }}" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

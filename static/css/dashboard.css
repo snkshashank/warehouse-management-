@@ -1,0 +1,30 @@
+.dashboard-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.chart-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .dashboard-heading {
+    font-size: 1.5rem;
+  }
+}

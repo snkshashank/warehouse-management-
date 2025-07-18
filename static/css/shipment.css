@@ -1,0 +1,54 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.shipment-container {
+    padding: 20px;
+    margin: auto;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+.table {
+    font-size: 0.95rem;
+}
+
+.table th {
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn-sm {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+/* Badge style for status */
+.badge {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+}
+
+/* Responsive handling */
+@media (max-width: 768px) {
+    .shipment-container {
+        padding: 15px;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+}
